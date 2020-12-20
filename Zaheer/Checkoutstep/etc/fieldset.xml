@@ -1,0 +1,25 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:DataObject/etc/fieldset.xsd">
+    <scope id="global">
+        <fieldset id="sales_convert_quote">
+            <field name="first_name">
+                <aspect name="to_order"/>
+            </field>
+            <field name="last_name">
+                <aspect name="to_order"/>
+            </field>
+            <field name="date_of_birth">
+                <aspect name="to_order"/>
+            </field>
+            <field name="email_id">
+                <aspect name="to_order"/>
+            </field>
+            <field name="favorite_color">
+                <aspect name="to_order"/>
+            </field>
+            <field name="customer_comment">
+                <aspect name="to_order"/>
+            </field>
+        </fieldset>
+    </scope>
+</config>

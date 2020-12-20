@@ -1,0 +1,42 @@
+<?php
+$viewModel = $block->getViewModel();
+$data = $viewModel->getProfileData();
+?>
+<section class="admin__page-section">
+    <div class="admin__page-section-title">
+        <span class="title"><?php /* @escapeNotVerified */
+            echo __('Profile Information') ?></span>
+    </div>
+
+    <div class="admin__page-section-item-content">
+        <table class="admin__table-secondary order-information-table">
+            <tbody>
+            <tr>
+                <th>First Name</th>
+                <td><?= $data['first_name']?></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td><?= $data['last_name']?></td>
+            </tr>
+            <tr>
+                <th>Date Of Birth</th>
+                <td><?= $data['date_of_birth']?></td>
+            </tr>
+            <tr>
+                <th>Email Id</th>
+                <td><?= $data['email_id']?></td>
+            </tr>
+            <tr>
+                <th>Favourite Color</th>
+                <td><?= $data['favorite_color']?></td>
+            </tr>
+            <tr>
+                <th>Comment</th>
+                <td><?= nl2br($data['customer_comment'])?></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>

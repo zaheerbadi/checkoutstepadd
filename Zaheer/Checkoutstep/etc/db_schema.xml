@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="quote">
+		<column comment="first_name"  name="first_name" nullable="true" xsi:type="varchar"/>
+		<column comment="last_name"  name="last_name" nullable="true" xsi:type="varchar"/>
+		<column comment="date_of_birth"  name="date_of_birth" nullable="true" xsi:type="date"/>
+		<column comment="email_id"  name="email_id" nullable="true" xsi:type="varchar"/>
+		<column comment="favorite_color"  name="favorite_color" nullable="true" xsi:type="varchar"/>
+		<column comment="customer_comment"  name="customer_comment" nullable="true" xsi:type="text"/>
+	</table>
+	<table name="sales_order">
+		<column comment="first_name"  name="first_name" nullable="true" xsi:type="varchar"/>
+		<column comment="last_name"  name="last_name" nullable="true" xsi:type="varchar"/>
+		<column comment="date_of_birth"  name="date_of_birth" nullable="true" xsi:type="date"/>
+		<column comment="email_id"  name="email_id" nullable="true" xsi:type="varchar"/>
+		<column comment="favorite_color"  name="favorite_color" nullable="true" xsi:type="varchar"/>
+        <column comment="customer_comment"  name="customer_comment" nullable="true" xsi:type="text"/>
+	</table>
+</schema>

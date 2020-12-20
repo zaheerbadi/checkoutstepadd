@@ -1,0 +1,23 @@
+<li id="extra-step" data-bind="fadeVisible: isVisible">
+<div>
+    <form  class="form" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+        <fieldset class="fieldset">
+            <!-- ko foreach: getRegion('custom-checkout-form-fields') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </fieldset>
+
+      <!--  <button type="button" data-bind="click: onSubmit" class="button action continue primary">
+            <span data-bind="i18n: 'Next'"></span>
+        </button>
+      -->  <div class="actions-toolbar" id="shipping-method-buttons-container">
+                    <div class="primary">
+                        <button data-role="opc-continue" data-bind="click: onSubmit"  class="button action continue primary">
+                            <span data-bind="i18n: 'Next'"></span>
+                        </button>
+                    </div>
+                </div>
+    </form>
+
+</div>
+</li>

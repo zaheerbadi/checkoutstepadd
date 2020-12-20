@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--<referenceBlock name="order_info">
+            <block class="Zaheer\Checkoutstep\Block\Adminhtml\Order\View\Profiledata" name="sales_order_view_profiledata" template="order/view/custom.phtml" />
+        </referenceBlock>-->
+        <referenceBlock name="order_additional_info">
+            <container name="profile_info" htmlTag="div" htmlClass="basys_info">
+                <block name="profiledata.viewmodel" template="Zaheer_Checkoutstep::order/view/profiledata.phtml">
+                    <arguments>
+                        <argument name="view_model" xsi:type="object">Zaheer\Checkoutstep\ViewModel\Profiledata</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceBlock>
+    </body>
+</page>

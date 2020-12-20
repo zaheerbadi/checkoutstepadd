@@ -1,0 +1,22 @@
+{
+    "name": "zaheer/module-checkoutstep",
+    "description": "",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "zaheerbadi",
+            "email": "zaheerbadi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Zaheer\\Checkoutstep\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
